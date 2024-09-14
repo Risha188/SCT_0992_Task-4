@@ -1,1 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-sizing: border-box;
+}
 
+body{
+    font-family: "Arial";
+    background-color: rgb(200, 200, 255)
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    flex: 1;
+    height: 20px;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #858585;
+}
+
+.form-control button{
+    background-color: #76df76;
+    border: 1px;
+} 
+
+.form-control button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+#date{
+    flex: 1;
+}
+
+.date-hour{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    color: #102f5e;
+}
+
+button{
+    background-color: darkorange;
+    color: #102f5e;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: 1px solid #f5880e;
+    width: 30px;
+}
+
+button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+button i{
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input{
+    padding: 0.4rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.todo-container{
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 4rem auto;
+}
+
+.todo-container header{
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1{
+    padding-left: 16px; 
+    border-left: 5px solid #e74c3c;
+    font-size: 2rem;
+}
+
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control input{
+    margin-right: 0.8rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+    width: 50px;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 2px solid #ddd;
+    transition: 0.3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: 1rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ecf0f1;
+    border: none;
+}
+
+.done{
+    background-color: green;
+}
+
+.done h3{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.todo button:hover, .done button{
+    background-color: #395169;
+    color: #ecf0f1;
+}
+
+.done button:hover{
+    background-color: #ecf0f1;
+    color: #102f5e;
+}
+
+#todo-list{
+    max-height: 220px;
+    overflow: auto;
+}
